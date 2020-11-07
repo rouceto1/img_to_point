@@ -1,0 +1,8 @@
+
+<launch>
+  <node pkg="image_transport" type="republish" name="decompress1" args="compressed in:=/camera_1/image_raw raw out:=/camera_1/image_raw"/>
+ <node pkg="image_transport" type="republish" name="decompress2" args="compressed in:=/camera_2/image_raw raw out:=/camera_2/image_raw"/>
+ <node pkg="image_transport" type="republish" name="decompress3" args="compressed in:=/camera_3/image_raw raw out:=/camera_3/image_raw"/>
+ <node pkg="image_transport" type="republish" name="decompress4" args="compressed in:=/camera_4/image_raw raw out:=/camera_4/image_raw"/>
+ <node pkg="image_transport" type="republish" name="decompress0" args="compressed in:=/camera_0/image_raw raw out:=/camera_0/image_raw"/>
+ </launch> 
